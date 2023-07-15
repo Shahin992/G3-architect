@@ -113,10 +113,8 @@ li {
     padding-left: 20px;
 }
 
-
-
 .text-box-1, .text-box-2, .text-box-3, .text-box-4{
-    padding: 30px;
+padding-left: 20px;
 margin-bottom: 20px;
 border-radius: 8px;
 background: #FFF;
@@ -147,6 +145,54 @@ font-size: 1.3rem;
     
 }
 
+.some-fact{
+    padding: 20px;
+}
+.fact-title{
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+}
+
+.icon-img-box{
+display: flex;
+justify-content: space-around;
+align-items: center:
+}
+
+.factbox{
+    margin: 20px 0;
+    border: 3px solid goldenrod;
+    text-align: center;
+    padding: 10px;
+
+}
+
+h4{
+    font-size: 2rem;
+    padding:  15px;
+}
+
+.sponsored-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    font-size: 2rem;
+    margin: 50px 0px;
+}
+p{
+    font-size: 1.5rem;
+}
+
+.footer-img{
+
+    display: flex;
+    justify-content: space-around;
+   margin: 50px 0px;
+}
+
+
 /* responsive style for mobile */
 
 @media screen and (max-width: 576px) {
@@ -155,7 +201,7 @@ font-size: 1.3rem;
         padding: 20px;
     }
 
-    nav, .banner{
+    nav, .banner, .icon-img-box, .footer-img{
         flex-direction: column;
 
     }
@@ -169,11 +215,11 @@ font-size: 1.3rem;
         width: 90%;
     }
 
-    .img-box-2 img{
+    .img-box-2 img, .footer-img img{
         width: 90%;
-        margin: 20px;
+        margin: 30px;
     }
-    .ten-year{
+    .ten-year {
         position: static;
         padding: 20px;
     }
@@ -199,7 +245,7 @@ font-size: 1.3rem;
    .row-our-features, .row-love-and-enjoy{
     grid-template-columns: 1fr;
    }
-   .img-box{
+   .img-box, {
     grid-template-columns: repeat(2,1fr);
     
    }
@@ -207,7 +253,7 @@ font-size: 1.3rem;
     width: 90%;
    }
 
-   .img-box-2 img {
+   .img-box-2 img, .footer-img img {
     width: 90%;
     margin: 20px;
    }
@@ -215,6 +261,11 @@ font-size: 1.3rem;
     margin: 10px;
     position: static;
     padding: 20px;
+}
+.icon-img-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
 }
 
 }
